@@ -52,8 +52,5 @@ first_line(34, 'qualquer nome', '24/04/1992', '05', 60, -208)
 first_line(34, 'qualquer nome', '24/04/1992', '05', 60, -416)
 first_line(34, 'qualquer nome', '24/04/1992', '05', 60, -632)
 
-cnv.showPage()
-cnv.drawString(0,200, 'a')
-
 
 cnv.save()
