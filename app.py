@@ -3,10 +3,13 @@ from reportlab.lib.pagesizes import A4
 
 
 cnv = canvas.Canvas('meu_pdf.pdf')
-cnv.drawString(0,208,'a')
-cnv.drawString(0,416,'a')
-cnv.drawString(0,624,'a')
-cnv.drawString(593,840,'.')
+cnv.line(0,208, 50, 208)
+cnv.line(550,208, 600, 208)
+cnv.line(0,416, 50, 416)
+cnv.line(550,416, 600, 416)
+cnv.line(0,632,50, 632)
+cnv.line(550,632,600, 632)
+
 cnv.setFont(psfontname= 'Times-Roman' ,size=9)
 
 
@@ -48,7 +51,7 @@ first_line(34, 'qualquer nome ', '17/08/1992', '05', 60, 0)
 first_line(34, 'qualquer nome', '24/04/1992', '05', 60, -208)
 first_line(34, 'qualquer nome', '24/04/1992', '05', 60, -416)
 first_line(34, 'qualquer nome', '24/04/1992', '05', 60, -632)
-# second_line(34, 'ruben sa brito', '24/04/1995', '05', 60)
+
 cnv.showPage()
 cnv.drawString(0,200, 'a')
 
